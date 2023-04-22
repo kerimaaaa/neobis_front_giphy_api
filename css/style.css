@@ -65,7 +65,15 @@ button{
     color: #FFF;
     cursor: pointer;
 }    
+.gifs-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box; 
+}
 .gif-img{
-    width: 300px;
-    height: 300px;
+    width: 33%;
+    height: 250px;
 }
