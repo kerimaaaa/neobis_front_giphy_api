@@ -2,7 +2,7 @@
 const searchBtn = document.querySelector('#search-btn');
 const url = `https://api.giphy.com/v1/gifs/search`;
 let search = `?q=`;
-const key = "&api-key=JSewDw2NG8qKekya6PqHYlJYQTzPthUw";
+const key = "&api_key=JSewDw2NG8qKekya6PqHYlJYQTzPthUw";
 const limitation = `&limit=40`;
 
 let q = "";
