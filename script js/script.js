@@ -12,7 +12,8 @@ let urlComplete = "";
 
 
 
-searchBtn.onclick = () => {
+searchBtn.onclick = (e) => {
+    e.preventDefault();
     q = document.getElementById('search').value;
     urlComplete = url + search + q + key + limitation;
     getData();
@@ -35,5 +36,3 @@ const getData = async () => {
         }
     })
 }
-
-getData();
