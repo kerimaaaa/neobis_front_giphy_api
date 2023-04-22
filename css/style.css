@@ -60,6 +60,11 @@ button{
  border: none;
  background-color: rgb(133, 82, 143);
 }
+#search-btn:hover{
+    background-color: rgb(83, 18, 144);
+    color: #FFF;
+    cursor: pointer;
+}    
 .gif-img{
     width: 300px;
     height: 300px;
