@@ -17,6 +17,8 @@ searchBtn.onclick = (e) => {
     q = document.getElementById('search').value;
     urlComplete = url + search + q + key + limitation;
     getData();
+    input.value = '';
+    portfolio.innerHTML = "";
 }
 
 const getData = async () => {
