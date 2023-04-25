@@ -1,11 +1,10 @@
 //api.giphy.com/v1/gifs/search?q=&api_key=JSewDw2NG8qKekya6PqHYlJYQTzPthUw&limit=10
 const searchBtn = document.querySelector('#search-btn');
+const portfolio = document.getElementById("portfolio");
 const url = `https://api.giphy.com/v1/gifs/search`;
 let search = `?q=`;
 const key = "&api_key=JSewDw2NG8qKekya6PqHYlJYQTzPthUw";
-const limitation = `&limit=40`;
-
-let q = "";
+const limitation = `&limit=39`;
 
 let urlComplete = "";
 
@@ -14,8 +13,8 @@ let urlComplete = "";
 
 searchBtn.onclick = (e) => {
     e.preventDefault();
-    q = document.getElementById('search').value;
-    urlComplete = url + search + q + key + limitation;
+   let input = document.getElementById('search');
+    urlComplete = url + search + input.value + key + limitation;
     getData();
     input.value = '';
     portfolio.innerHTML = "";
@@ -33,7 +32,7 @@ const getData = async () => {
 
             gif.src = giphy.data[i].images["original"].url;
             gif.className = "gif-img";
-            const portfolio = document.getElementById("portfolio");
+     
             portfolio.appendChild(gif);
         }
     })
